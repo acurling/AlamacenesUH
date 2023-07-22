@@ -1,17 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FrmClientes.aspx.cs" Inherits="AlamacenesUH.FrmClientes" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <link href="Css/EstiloCatalogo.css" rel="stylesheet" />
-    <link href="Css/CssBotones.css" rel="stylesheet" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Menumaster.master" AutoEventWireup="true" CodeBehind="FrmCliente.aspx.cs" Inherits="AlamacenesUH.FrmCliente" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <h1>CATALOGO DE CLIENTES</h1>
+    <div>
             <div>
                 <label for="codigo">Codigo:</label>
                 <asp:TextBox ID="tcodigo" runat="server"></asp:TextBox>
@@ -71,6 +63,4 @@
         </div>
     </div>
         <div class="footer"> Derechos reservador 2023</div>
-    </form>
-</body>
-</html>
+</asp:Content>

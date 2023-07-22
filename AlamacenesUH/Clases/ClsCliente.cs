@@ -10,7 +10,7 @@ namespace AlamacenesUH.Clases
 {
     public class ClsCliente
     {
-        public int id { get; set; }
+        public int idy { get; set; }
         public string nombre { get; set; }
         public string direccion { get; set; }
         public string telefono { get; set; }
@@ -19,7 +19,7 @@ namespace AlamacenesUH.Clases
        public static List<ClsCliente> clientes = new List<ClsCliente>();    
         public ClsCliente(int id, string nombre, string direccion, string telefono)
         {
-            this.id = id;
+            this.idy = id;
             this.nombre = nombre;
             this.direccion = direccion;
             this.telefono = telefono;
@@ -108,7 +108,7 @@ namespace AlamacenesUH.Clases
 
                 using (Conn =Clases.DBconn.obtenerConexion())
                 {
-                    SqlCommand cmd = new SqlCommand("Sp_GestionarCliente ", Conn)
+                    SqlCommand cmd = new SqlCommand("Sp_GestionarCliente", Conn)
                     {
                         CommandType = CommandType.StoredProcedure
                     };
@@ -119,7 +119,7 @@ namespace AlamacenesUH.Clases
                         while (reader.Read())
                         {
                             ClsCliente cliente = new ClsCliente();
-                            cliente.id = reader.GetInt32(0);
+                            cliente.idy = reader.GetInt32(0);
                             cliente.nombre = reader.GetString(1);
                             cliente.direccion = reader.GetString(2);
                             cliente.telefono = reader.GetString(3);

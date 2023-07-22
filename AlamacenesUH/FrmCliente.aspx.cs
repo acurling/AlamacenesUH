@@ -8,11 +8,13 @@ using System.Web.UI.WebControls;
 
 namespace AlamacenesUH
 {
-    public partial class FrmClientes : System.Web.UI.Page
+    public partial class FrmCliente : System.Web.UI.Page
     {
         List<ClsCliente> clientes = ClsCliente.ObtenerClientes();
         protected void Page_Load(object sender, EventArgs e)
         {
+
+
             if (!IsPostBack)
             {
                 CargarClientes();
@@ -25,7 +27,6 @@ namespace AlamacenesUH
             repeaterClientes.DataSource = clientes;
             repeaterClientes.DataBind();
         }
-
         public void alertas(String texto)
         {
             string message = texto;
@@ -61,7 +62,7 @@ namespace AlamacenesUH
                 alertas("Error al ingresar Usuario");
             }
 
-           
+
         }
 
         protected void BBorrar_Click(object sender, EventArgs e)

@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menumaster.master.cs" Inherits="AlamacenesUH.Menumaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="Css/EstiloCatalogo.css" rel="stylesheet" />
+    <link href="Css/CssBotones.css" rel="stylesheet" />
+    <link href="Css/MenuCss.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <ul>
+  <li><a href="frmInicio.aspx">Inicio</a></li>
+  <li><a href="#news">Facturacion</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Catalogo</a>
+    <div class="dropdown-content">
+      <a href="FrmCliente.aspx">Clientes</a>
+      <a href="FrmUSuario.aspx">Usuarios</a>
+      <a href="FrmProducto.aspx">Productos</a>
+    </div>
+  </li>
+</ul>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
