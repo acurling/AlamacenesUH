@@ -24,6 +24,7 @@
       <a href="FrmCliente.aspx">Clientes</a>
       <a href="FrmUSuario.aspx">Usuarios</a>
       <a href="FrmProducto.aspx">Productos</a>
+      <a href="FrmBodegas.aspx">Bodegas</a>
     </div>
   </li>
 </ul>

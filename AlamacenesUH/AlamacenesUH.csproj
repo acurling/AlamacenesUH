@@ -83,6 +83,7 @@
     <Content Include="fonts\icomoon\fonts\icomoon.svg" />
     <Content Include="fonts\icomoon\Read Me.txt" />
     <Content Include="fonts\icomoon\style.css" />
+    <Content Include="FrmBodegas.aspx" />
     <Content Include="FrmCliente.aspx" />
     <Content Include="FrmClientes.aspx" />
     <Content Include="FrmInicio.aspx" />
@@ -101,9 +102,17 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\ClsBodega.cs" />
     <Compile Include="Clases\ClsCliente.cs" />
     <Compile Include="Clases\ClsUsuario.cs" />
     <Compile Include="Clases\DBconn.cs" />
+    <Compile Include="FrmBodegas.aspx.cs">
+      <DependentUpon>FrmBodegas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmBodegas.aspx.designer.cs">
+      <DependentUpon>FrmBodegas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FrmCliente.aspx.cs">
       <DependentUpon>FrmCliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

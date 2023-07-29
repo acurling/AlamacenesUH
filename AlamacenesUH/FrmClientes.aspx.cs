@@ -62,6 +62,7 @@ namespace AlamacenesUH
             }
 
            
+           
         }
 
         protected void BBorrar_Click(object sender, EventArgs e)

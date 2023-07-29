@@ -20,6 +20,7 @@ namespace AlamacenesUH
                 CargarClientes();
             }
 
+
         }
 
         private void CargarClientes()

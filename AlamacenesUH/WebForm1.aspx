@@ -22,7 +22,7 @@
   			<li><a href="Frminicio.aspx">Inicio</a></li>
   			<li><a href="#">Facturacion</a></li>
   			<li><a href="FrmClientes.aspx">Clientes</a></li>
-  			<li><a href="#">USuarios</a></li>
+  			<li><a href="FrmBodegas.aspx">Bodegas</a></li>
   		</ul>
   	</nav>
 
